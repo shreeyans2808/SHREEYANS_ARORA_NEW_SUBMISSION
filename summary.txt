@@ -1,0 +1,7 @@
+1. Multi-stage retrieval systems incorporate ranking models. At the first stage, dense or sparse embedding models retrieve relevant passages;
+   ranking models reorder these accordingly with relevance to the query (k-top answers), hence increasing accuracy.
+
+2. Ranking models are usually Transformer-based cross-encoders. 
+   Such a model is processing the query and passage together, leveraging self-attention to deeply model their relationship, hence refining results from the first stage.
+   
+3. Reranking the top-k results significantly improves the accuracy of retrieval. Larger size for ranking models; but the result is more accurate with higher computational cost and latency.
